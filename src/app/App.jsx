@@ -74,7 +74,7 @@ const [tasks, setTasks] = useState([])
    
    }
 
-   //Así se optienen los datos para la edición efectiva. Se tiene que agregar la id a la variable de estado para
+   //Así se obtienen los datos para la edición efectiva. Se tiene que agregar la id a la variable de estado para
    //aplicar el put usando ese id como parámetro. En principio, no se debería dejar editar el id público.
    let editTask = (id)=>{
        fetch(`/api/task/${id}`).then(res=>res.json()).then(data=>{
